@@ -1,5 +1,5 @@
 // DemoApplication.java
-package gasville.daniellenewport.demo;
+package main.java.gasville.daniellenewport.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
