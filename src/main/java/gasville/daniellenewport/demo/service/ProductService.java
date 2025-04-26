@@ -1,5 +1,5 @@
 // service/ProductService.java
-package com.example.demo.service;
+package main.java.gasville.daniellenewport.demo.service;
 
 import com.example.demo.dto.ProductDto;
 import com.example.demo.model.Product;
