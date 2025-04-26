@@ -1,22 +1,39 @@
-// dto/ProductDto.java
-package main.java.gasville.daniellenewport.demo.dto;
+// model/Product.java
+package com.example.demo.model;
 
-public class ProductDto {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private double price;
     private int quantity;
 
     // Constructors, getters, and setters
-    public ProductDto() {
+    public Product() {
     }
 
-    public ProductDto(String name, double price, int quantity) {
+    public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
-    // Getters and setters
+    // Getters and setters for all fields
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
