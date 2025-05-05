@@ -1,7 +1,7 @@
 // repository/ProductRepository.java
 package main.java.gasville.daniellenewport.demo.repository;
 
-import com.example.demo.model.Product;
+import main.java.gasville.daniellenewport.demo.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {

@@ -1,9 +1,9 @@
 // service/ProductService.java
 package main.java.gasville.daniellenewport.demo.service;
 
-import com.example.demo.dto.ProductDto;
-import com.example.demo.model.Product;
-import com.example.demo.repository.ProductRepository;
+import main.java.gasville.daniellenewport.demo.dto.ProductDto;
+import main.java.gasville.daniellenewport.demo.model.Product;
+import main.java.gasville.daniellenewport.demo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
