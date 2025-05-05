@@ -1,5 +1,5 @@
 // model/Product.java
-package main.java.gasville.daniellenewport.demo.model;
+package gasville.daniellenewport.demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

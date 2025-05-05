@@ -1,5 +1,5 @@
 // config/KafkaConfig.java
-package main.java.gasville.daniellenewport.demo.config;
+package gasville.daniellenewport.demo.config;
 
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.clients.admin.NewTopic;

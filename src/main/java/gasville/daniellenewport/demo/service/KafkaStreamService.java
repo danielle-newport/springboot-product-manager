@@ -1,5 +1,5 @@
 // service/KafkaStreamService.java
-package main.java.gasville.daniellenewport.demo.service;
+package gasville.daniellenewport.demo.service;
 
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsBuilder;

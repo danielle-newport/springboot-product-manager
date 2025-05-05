@@ -1,9 +1,9 @@
 // controller/ProductController.java
-package main.java.gasville.daniellenewport.demo.controller;
+package gasville.daniellenewport.demo.controller;
 
-import main.java.gasville.daniellenewport.demo.dto.ProductDto;
-import main.java.gasville.daniellenewport.demo.model.Product;
-import main.java.gasville.daniellenewport.demo.service.ProductService;
+import gasville.daniellenewport.demo.dto.ProductDto;
+import gasville.daniellenewport.demo.model.Product;
+import gasville.daniellenewport.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

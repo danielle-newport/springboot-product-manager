@@ -1,5 +1,5 @@
 // dto/ProductDto.java
-package main.java.gasville.daniellenewport.demo.dto;
+package gasville.daniellenewport.demo.dto;
 
 public class ProductDto {
     private String name;
