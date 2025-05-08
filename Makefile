@@ -10,9 +10,14 @@ SPRING_APP_JAR=target/demo-0.0.1-SNAPSHOT.jar
 INPUT_TOPIC=products-input
 OUTPUT_TOPIC=products-output
 
-.PHONY: all start-kafka start-spring start-consumer start-producer clean
+.PHONY: all compile start-kafka start-spring start-consumer start-producer clean
 
-all: start-kafka start-spring
+all: compile start-kafka start-spring
+
+compile:
+	@echo "Compiling the project..."
+	@mvn clean package
+	@echo "Compilation complete"
 
 start-kafka:
 	@echo "Starting Kafka..."
@@ -24,6 +29,11 @@ start-kafka:
 	@echo "Kafka ready"
 
 start-spring:
+	@if [ ! -f "$(SPRING_APP_JAR)" ]; then \
+		echo "Error: JAR file not found at $(SPRING_APP_JAR)"; \
+		echo "Run 'make compile' first to build the application"; \
+		exit 1; \
+	fi
 	@echo "Starting Spring Boot application..."
 	@java -jar $(SPRING_APP_JAR) &
 	@sleep 10
