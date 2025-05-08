@@ -13,27 +13,27 @@ A demo project to gain experience with:
 ## Installation
 
 1. **Install Kafka** (MacOS with Homebrew):
-   ```bash
-   brew install kafka
-   ```
+```bash
+brew install kafka
+```
 
 2. **Clone the repository**:
 
-    ```bash
-    git clone https://github.com/danielle-newport/springboot-product-manager.git
-    ```
+```bash
+git clone https://github.com/danielle-newport/springboot-product-manager.git
+```
 
 ## Running the Application
 
-Note: Update ```KAFKA_DIR``` in Makefile to match the path of your local Kafka installation
+Note: Update `KAFKA_DIR` in Makefile to match the path of your local Kafka installation
 
-    ```bash
-    make all              # Build the project, then start Kafka and Spring Boot
-    make compile          # Build Spring Boot project
-    make start-consumer   # Launch Kafka consumer
-    make start-producer   # Launch Kafka producer
-    make clean            # Stop all services (Kafka and Spring Boot)
-    ```
+```bash
+make all              # Build the project, then start Kafka and Spring Boot
+make compile          # Build Spring Boot project
+make start-consumer   # Launch Kafka consumer
+make start-producer   # Launch Kafka producer
+make clean            # Stop all services (Kafka and Spring Boot)
+```
 
 ## Project Structure
 
